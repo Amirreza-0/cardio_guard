@@ -1,0 +1,13 @@
+# Netlify configuration file
+
+[build]
+  command = "npm run build" # The command to build your site (uses the script from package.json)
+  publish = "dist"          # The directory containing the built site (Vite's default output)
+  environment = { NODE_VERSION = "20" } # Specify Node.js version (optional, but recommended)
+
+# Optional: Redirects and rewrites for single-page applications (SPA)
+# This ensures that refreshing on sub-routes (e.g., /patient/123) still loads your app
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
