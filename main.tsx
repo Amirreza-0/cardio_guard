@@ -3,14 +3,28 @@ import React, { useState } from 'react';
 // Assuming these components are correctly set up in the project structure
 // using shadcn/ui or a similar library, and a path alias '@' is configured
 // to point to the 'src' or equivalent directory.
-import { Button } from "@/components/ui/button"; // Changed path
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"; // Changed path
-import { Input } from "@/components/ui/input"; // Changed path
-import { Label } from "@/components/ui/label"; // Changed path
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"; // Changed path
-import { Checkbox } from "@/components/ui/checkbox"; // Changed path
-import { Separator } from "@/components/ui/separator"; // Changed path
-import { Progress } from "@/components/ui/progress"; // Changed path
+import { Button } from "../components/ui/button";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "../components/ui/card";
+import { Input } from "../components/ui/input";
+import { Label } from "../components/ui/label";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "../components/ui/select";
+import { Checkbox } from "../components/ui/checkbox";
+import { Separator } from "../components/ui/separator";
+import { Progress } from "../components/ui/progress";
+
 
 // Define the structure for feature importance
 interface FeatureImportance {
